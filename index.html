@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="kurisu's tictactoe">
+    <meta name="author" content="kurisu">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--引入jquery&bootstrap-->
+    <link rel="stylesheet" href="css/tictactoe.css">
+</head>
+<body>
+    <html>
+    <head>
+        <title>井字游戏</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+    <div id="iconModal" class="modal fade"><!--XO选择-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="title"> </h1>
+                </div>
+                <div class="modal-body">
+                    <p id="question"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="leftButton">X</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="rightButton">O</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="container-fluid">
+        <div class="square">
+            <div id="top-left" class="col-xs-4"><hr class="top-horizontal"><hr class="left-vertical"><span>&nbsp;</span></div>
+            <div id="top-middle" class="col-xs-4"><hr class="middle-vertical"><span>&nbsp;</span></div>
+            <div id="top-right"	class="col-xs-4"><hr class="right-vertical"><span>&nbsp;</span></div>
+
+            <div id="center-left" class="col-xs-4"><hr class="middle-horizontal"><span>&nbsp;</span></div>
+            <div id="center-middle" class="col-xs-4"><hr class="left-diagonal"><hr class="right-diagonal"><span>&nbsp;</span></div>
+            <div id="center-right" class="col-xs-4"><span>&nbsp;</span></div>
+
+            <div id="bottom-left" class="col-xs-4"><hr class="bottom-horizontal"><span>&nbsp;</span></div>
+            <div id="bottom-middle" class="col-xs-4"><span>&nbsp;</span></div>
+            <div id="bottom-right" class="col-xs-4"><span>&nbsp;</span></div>
+        </div>
+    </div>
+    </body>
+    </html>
+</body>
+<script src="js/tictactoe.js"></script>
+</html>
